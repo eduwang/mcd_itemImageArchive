@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 페이지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>MathCoDi 문항 이미지</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>문항 번호</th>
+                <th>문항 이미지</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>M-75-12</td>
+                <td><img src="./public/Trigonometric/M-75-12.png" alt="문항 1 이미지" class="thumbnail" onclick="showImage(this.src)"/></td>
+            </tr>
+
+            <!-- 추가 문항 -->
+        </tbody>
+    </table>
+    <!-- 모달 창 -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeImage()">&times;</span>
+      <img class="modal-content" id="fullImage">
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
