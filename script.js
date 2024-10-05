@@ -11,3 +11,7 @@ function closeImage() {
     var modal = document.getElementById("imageModal");
     modal.style.display = "none";
 }
+
+// window 객체에 함수 등록
+window.showImage = showImage;
+window.closeImage = closeImage;
