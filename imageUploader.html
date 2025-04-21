@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>문항 이미지 업로드</title>
+  <link rel="stylesheet" href="imageUploader.css" />
+</head>
+<body>
+  <h1>MathCoDi 이미지 업로드</h1>
+
+  <div class="upload-form">
+    <input type="text" id="itemIdInput" placeholder="문항 ID를 입력하세요" />
+    <input type="file" id="imageInput" accept="image/*" />
+    <button id="uploadBtn">등록</button>
+    <div id="uploadStatus"></div>
+  </div>
+
+  <div id="uploadedImageContainer"></div>
+
+  <script type="module" src="imageUploader.js"></script>
+</body>
+</html>
